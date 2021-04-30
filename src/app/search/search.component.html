@@ -1,0 +1,9 @@
+<form>
+  <label>Search Person</label>
+  <input type="text" [formControl]="searchForm">
+</form>
+
+<p>Result:</p><br>
+<ul>
+  <li (click)="setPage(result)" *ngFor="let result of result">{{result.firstname}}</li>
+</ul>
